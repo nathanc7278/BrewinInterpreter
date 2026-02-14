@@ -1,0 +1,20 @@
+def main() {
+    var obj1o;
+    obj1o = @;
+
+    obj1o.make_innerf = lambdao() {
+        var innero;
+        innero = @;
+        return innero;
+    };
+
+    var resulto;
+    resulto = obj1o.make_innerf();
+    print(resulto == nil);
+}
+
+/*
+*OUT*
+false
+*OUT*
+*/

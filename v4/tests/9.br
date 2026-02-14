@@ -1,0 +1,12 @@
+def main() {
+  var varA;
+  varA = nil;
+  
+  print("Success");
+}
+
+/*
+*OUT*
+Success
+*OUT*
+*/

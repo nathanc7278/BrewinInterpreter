@@ -1,0 +1,19 @@
+def foof() {
+  return lambdai(i) { return 2*i; };
+}
+def main() {
+ var af;
+ var bf;
+ var cf;
+ af = foof();
+ bf = af;
+ cf = foof();
+ if (af == bf) { print("Yes"); } /* prints Yes! */
+ if (af == cf) { print("Argh"); } /* does not print */
+}
+
+/*
+*OUT*
+Yes
+*OUT*
+*/

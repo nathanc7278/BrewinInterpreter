@@ -1,0 +1,19 @@
+def main() {
+  var o;
+  o = @;
+
+  var addf;
+  addf = lambdai(xi, yi) {
+    return xi + yi;
+  };
+
+  o.addf = addf;
+
+  print(o.addf(2, 3));
+}
+
+/*
+*OUT*
+5
+*OUT*
+*/

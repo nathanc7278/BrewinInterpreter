@@ -1,0 +1,20 @@
+def addi(xi, yi) { return xi + yi; }
+def choosef(opi) { 
+  if (opi == 1) { return addi; } 
+  else { return lambdai(xi, yi){ return xi - yi; }; } 
+}
+
+def main() {
+  var f;
+  f = choosef(1);
+  print(f(10, 5)); /* 15 */
+  f = choosef(2);
+  print(f(10, 5)); /* 5 */
+}
+
+/*
+*OUT*
+15
+5
+*OUT*
+*/

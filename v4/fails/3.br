@@ -1,0 +1,17 @@
+def main() {
+    var obj1o;
+    obj1o = @;
+
+    obj1o.methodf = lambdai() {
+        var selfo;
+        return 42;
+    };
+
+    print(obj1o.methodf());
+}
+
+/*
+*OUT*
+ErrorType.NAME_ERROR
+*OUT*
+*/

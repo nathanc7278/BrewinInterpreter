@@ -1,0 +1,20 @@
+interface I {
+  xi;
+  xi;
+}
+
+def funcf(aI) {
+    print(aI.xi);
+}
+def main() {
+  var o;
+  o = @;
+  o.xi = 1;
+  funcf(o);
+}
+
+/*
+*OUT*
+ErrorType.NAME_ERROR
+*OUT*
+*/

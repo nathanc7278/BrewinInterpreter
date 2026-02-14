@@ -1,0 +1,23 @@
+def main() {
+  var basei; 
+  basei = 10;
+  var f;
+  f = lambdai(xi) { return basei + xi; };
+  basei = 100;
+  print(f(5));  /* 15 (captured value 10) */
+
+  var o; 
+  o = @; 
+  o.vali = 1;
+  var gf;
+  gf = lambdav() { o.vali = 2; };  /* mutates captured object */
+  gf(); 
+  print(o.vali); /* 2 */
+}
+
+/*
+*OUT*
+15
+2
+*OUT*
+*/

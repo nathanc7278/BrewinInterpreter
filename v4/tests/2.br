@@ -1,0 +1,19 @@
+def addi(xi, yi) { return xi + yi; }
+def muli(xi, yi) { return xi * yi; }
+
+def main() {
+  var f1f; var f2f; var f3f;
+  f1f = addi; f2f = addi; f3f = muli;
+  print(f1f == f2f); /* true (same function object) */
+  print(f1f == f3f); /* false */
+  var of; var oo;    /* both default to nil */
+  print(of == oo);   /* true (nil == nil) */
+}
+
+/*
+*OUT*
+true
+false
+true
+*OUT*
+*/

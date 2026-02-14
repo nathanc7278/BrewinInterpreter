@@ -1,0 +1,20 @@
+def main() {
+    var counteri;
+    counteri = 0;
+
+    var incrf;
+    incrf = lambdai() {
+        counteri = counteri + 1;
+        return counteri;
+    };
+
+    print(incrf());
+    print(incrf());
+}
+
+/*
+*OUT*
+1
+2
+*OUT*
+*/

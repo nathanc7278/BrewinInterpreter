@@ -1,0 +1,17 @@
+def main() {
+    var outero;
+    outero = @;
+
+    outero.innero = @;
+    outero.innero.incrementf = lambdai(xi) {
+        return xi + 1;
+    };
+
+    print(outero.innero.incrementf(5));
+}
+
+/*
+*OUT*
+6
+*OUT*
+*/

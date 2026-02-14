@@ -1,0 +1,24 @@
+interface I {
+  f;
+}
+
+def fooi() {
+  return 1;
+}
+
+def funcf(&oI) {
+    print(oI.f());
+}
+
+def main() {
+    var o;
+    o = @;
+    o.f = fooi;
+    funcf(42);
+}
+
+/*
+*OUT*
+ErrorType.TYPE_ERROR
+*OUT*
+*/

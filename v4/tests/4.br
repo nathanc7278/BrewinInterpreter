@@ -1,0 +1,18 @@
+interface B { vali; }
+interface A { callf(&B); }
+
+def implv(&objB) { objB.vali = objB.vali + 10; }
+
+def main() {
+  var bo; bo = @; bo.vali = 5;
+  var ao; ao = @; ao.callf = implv;
+  var xA; xA = ao;
+  xA.callf(bo);
+  print(bo.vali);
+}
+
+/*
+*OUT*
+15
+*OUT*
+*/

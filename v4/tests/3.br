@@ -1,0 +1,16 @@
+/* Creating nested objects and calling function fields */
+def addi(xi, yi) { return xi + yi; }
+
+def main() {
+  var outero; var innero;
+  outero = @; innero = @;
+  innero.addf = addi;
+  outero.innero = innero;
+  print(outero.innero.addf(2, 3)); /* 5 */
+}
+
+/*
+*OUT*
+5
+*OUT*
+*/

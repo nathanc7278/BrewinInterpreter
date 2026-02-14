@@ -1,0 +1,37 @@
+def makePointo(xi, yi) {
+  var ponto;
+  ponto = @;
+
+  ponto.xi = xi;
+  ponto.yi = yi;
+
+  ponto.makeMoverf = lambdaf(dxi, dyi) {
+    return lambdai() {
+      selfo.xi = selfo.xi + dxi;
+      selfo.yi = selfo.yi + dyi;
+      return selfo.xi + selfo.yi;
+    };
+  };
+
+  return ponto;
+}
+
+def main() {
+  var o;
+  o = makePointo(1, 2);   
+
+  var moverf;
+  moverf = o.makeMoverf(3, 4); 
+  print(moverf());   
+
+  var mover2f;
+  mover2f = o.makeMoverf(1, 1);
+  print(mover2f());         
+}
+
+/*
+*OUT*
+10
+12
+*OUT*
+*/
